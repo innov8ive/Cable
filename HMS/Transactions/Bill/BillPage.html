@@ -1,0 +1,233 @@
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        table tr td
+        {
+            font-size: 11px;
+            width: 100%;
+        }
+
+        border
+        {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body style="font-size: 11px;">
+    <table border="1" cellpadding="10" cellspacing="5" style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td>
+
+
+                <table cellpadding="5" cellspacing="5" style="width: 100%; border: solid 1px black;">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: top;">
+                                <h1>{{OperatorName}}</h1>
+                                <div>{{OPAddress}}</div>
+                                <br />
+                                <div>{{Contact}}</div>
+                            </td>
+                            <td>
+                                <img id="img1" runat="server" src="image1.png" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                <table style="width: 100%">
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <h2>{{Name}}</h2>
+
+                            <p>{{Address}}</p>
+                        </td>
+                        <td>
+                            <table border="1" cellpadding="5" cellspacing="5" style="width: 100%; border-collapse: collapse;">
+                                <tbody>
+                                    <tr style="background-color: lightblue;">
+                                        <td><strong>Unique ID</strong></td>
+                                        <td>{{UniqueID}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bill Number</strong></td>
+                                        <td>{{BillID}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bill Period</strong></td>
+                                        <td>{{BillMonth}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bill Date</strong></td>
+                                        <td>{{BillDate}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Due Date</strong></td>
+                                        <td>{{DueDate}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <br />
+                <table border="1" cellpadding="5" cellspacing="5" style="width: 100%; border-collapse: collapse;">
+                    <tbody>
+                        <tr style="background-color: lightblue;">
+                            <td colspan="1"><strong>Previous Balance</strong></td>
+                            <td><strong>Last Payment</strong></td>
+                            <td><strong>Current Billing</strong></td>
+                            <td><strong>Before Due Date</strong></td>
+                            <td><strong>After Due Date</strong></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">{{Outstanding}}</td>
+                            <td>{{PrevPaid}}</td>
+                            <td>{{CurrentBilling}}</td>
+                            <td>{{NetBillAmount}}</td>
+                            <td>{{NetBillAmount}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="vertical-align: top;">
+                            <table border="1" cellpadding="5" cellspacing="5" style="width: 100%; border-collapse: collapse;">
+                                <tbody>
+                                    <tr style="background-color: lightblue;">
+                                        <td><strong>Description</strong></td>
+                                        <td>&nbsp;<strong>Amount</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Basic Price</strong></td>
+                                        <td>{{BasicPrice}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Add On Pack</strong></td>
+                                        <td>{{AddOnPrice}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Entertainment Tax</strong></td>
+                                        <td>{{EntTax}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Service Tax ({{ServiceTaxPerc}}%)</strong></td>
+                                        <td>{{ServiceTax}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Previous Outstanding</strong></td>
+                                        <td>{{Outstanding}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Total Amount</strong></td>
+                                        <td>{{TotalAmount}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Discount</strong></td>
+                                        <td>{{Discount}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Net Bill Amount</strong></td>
+                                        <td>{{NetBillAmount}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td style="vertical-align: top;">
+                            <img src="image2.png" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="border-top: solid 1px black;">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="image3.png" />
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <table border="1" cellpadding="10" cellspacing="5" style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td>
+                            <table cellpadding="5" cellspacing="5" style="width: 100%; border-collapse: collapse;">
+                                <tr>
+                                    <td style="text-align: center;">
+                                        <h3>{{OperatorName}}</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        {{OPAddress}}
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>
+                                        {{Contact}}
+                                    </td>
+                                </tr>
+                            </table>
+                            <br />
+                            <table border="1" cellpadding="5" cellspacing="5" style="width: 100%; border-collapse: collapse;">
+                                <tbody>
+
+                                    <tr>
+                                        <td style="background-color: lightblue;">Unique ID</td>
+                                        <td>{{UniqueID}}</td>
+                                        <td style="background-color: lightblue;">Bill No.</td>
+                                        <td>{{BillID}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: lightblue;">Billing Period</td>
+                                        <td>{{BillMonth}}</td>
+                                        <td style="background-color: lightblue;">Bill Amount</td>
+                                        <td>{{NetBillAmount}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br />
+                            <table cellpadding="5" cellspacing="5" style="width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 200px;"><strong>Customer Name :</strong></td>
+                                        <td colspan="3">{{Name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 200px;"><strong>Customer Address :</strong></td>
+                                        <td colspan="3">{{Address}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Mode Of Payment:</strong></td>
+                                        <td>[&nbsp;&nbsp;&nbsp;]&nbsp;&nbsp;Cash</td>
+                                        <td>[&nbsp;&nbsp;&nbsp;]&nbsp;&nbsp;Cheque/DD</td>
+                                        <td>[&nbsp;&nbsp;&nbsp;]&nbsp;&nbsp;Credit card</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cheque No/DD:</strong></td>
+                                        <td style="border-bottom: solid 1px;">&nbsp;</td>
+                                        <td><strong>Dated</strong></td>
+                                        <td style="border-bottom: solid 1px;">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Bank Name:</strong></td>
+                                        <td style="border-bottom: solid 1px;">&nbsp;</td>
+                                        <td><strong>Branch Name:</strong></td>
+                                        <td style="border-bottom: solid 1px;">&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
