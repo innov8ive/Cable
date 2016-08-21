@@ -174,8 +174,10 @@
                     <asp:BoundField DataField="NetBillAmount" HeaderText="Amount" SortExpression="NetBillAmount" />
                     <asp:BoundField DataField="CollectedAmount" HeaderText="Collection" SortExpression="CollectedAmount" />
                     <asp:BoundField DataField="PaymentDate" HeaderText="Payment Date" SortExpression="PaymentDate" DataFormatString="{0:dd-MMM-yyyy}" />
-                    <asp:BoundField DataField="PaymentMode" HeaderText="Payment Mode" ReadOnly="True"
+                    <asp:BoundField DataField="PaymentMode" HeaderText="Mode" ReadOnly="True"
                         SortExpression="PaymentMode" />
+                     <asp:BoundField DataField="Remarks" HeaderText="Remarks" ReadOnly="True"
+                        SortExpression="Remarks" />
                     <asp:BoundField DataField="CollectedBy" HeaderText="Collected By" ReadOnly="True"
                         SortExpression="CollectedBy" />
                     <asp:TemplateField HeaderText="View Bill">

@@ -1126,8 +1126,8 @@ where B.BillID=" +
             {
                 DataRow dr = dt.Rows[0];
                 string message =
-                    @"Dear <b>{0}</b>,<br/>You cable bill is generated on <b>{1}</b> for month <b>{2}</b>. 
-Please pay ontime to avoid delay charges.<br/><br/>Regards,<br/><b>{3}</b>";
+                    @"Dear <b>{0}</b>,<br/>Your cable bill is generated on <b>{1}</b> for the month of <b>{2}</b>. 
+Please pay (Before due date) ontime to avoid delay charges.<br/><br/>Regards,<br/><b>{3}</b>";
                 message = string.Format(message, Common.ToString(dr["Name"]),
                                Common.ToDate(dr["BillDate"]).ToString("dd-MMM-yyyy"),
                                Common.ToString(dr["BillMonth"]), Common.ToString(dr["NetworkName"]));

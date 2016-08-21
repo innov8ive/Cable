@@ -43,7 +43,7 @@ where C.CustomerID=" + customerID);
                 DataTable dtAccHistory = Common.GetDBResult(@"select top 12 B.BillID,B.BillDate,B.NetBillAmount,B.CollectedAmount,B.PaymentDate,
 Case B.PaymentMode when 'ByCash' then 'By Cash' else 
 'By Cheque '+B.ChequeNo+',Chq Date'+CONVERT(varchar,B.ChequeDate,103) end as PaymentMode,
-UC.FirstName+ISNULL(' '+UC.LastName,'') as CollectedBy
+UC.FirstName+ISNULL(' '+UC.LastName,'') as CollectedBy,B.Remarks
 from Bills B
 left outer join Users UC ON B.CollectedBy=UC.UserID where B.CustomerID=" + customerID + " Order By BillDate desc");
                 GridView1.DataSource = dtAccHistory;
